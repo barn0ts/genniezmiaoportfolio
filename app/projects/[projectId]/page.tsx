@@ -570,13 +570,13 @@ const projectData: ProjectData = {
 
 
 type Props = {
-  params: {
+  params: Promise<{
     projectId: string;
-  };
+  }>;
 };
 
-export default function ProjectDetailsPage({ params }: Props) {
-  const { projectId } = params;
+export default async function ProjectDetailsPage({ params }: Props) {
+  const { projectId } = await params;
   const project = projectData[projectId as keyof typeof projectData];
 
   if (!project) {
