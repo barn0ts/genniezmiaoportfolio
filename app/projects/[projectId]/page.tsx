@@ -575,23 +575,21 @@ type Props = {
   };
 };
 
-export async function generateStaticParams() {
-  return Object.keys(projectData).map((projectId) => ({
-    projectId: projectId,
-  }));
-}
-
 export default function ProjectDetailsPage({ params }: Props) {
   const { projectId } = params;
-  const project = projectData[projectId as keyof ProjectData];
+  const project = projectData[projectId as keyof typeof projectData];
 
   if (!project) {
     return <div>Project not found</div>;
   }
 
-  return (
-    <div>
-      <ProjectDetails project={project} />
-    </div>
-  );
+  return <ProjectDetails project={project} />;
 }
+
+export async function generateStaticParams() {
+  return Object.keys(projectData).map((projectId) => ({
+    projectId,
+  }));
+}
+
+
