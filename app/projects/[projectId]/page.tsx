@@ -1,6 +1,5 @@
 import React from 'react';
 import ProjectDetails from "@/components/ProjectDetails";
-import { type Metadata } from 'next';
 
 interface Project {
   title: string;
