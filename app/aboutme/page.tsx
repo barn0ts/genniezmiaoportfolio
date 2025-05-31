@@ -8,17 +8,16 @@ import AnimatedSoftwares from "@/components/AnimatedSoftwares";
 import ExperienceSection from "@/components/ExperienceSection"; 
 import { ArrowDown } from "lucide-react"; 
 import { useRouter } from "next/navigation";
-import { ArrowRight } from 'lucide-react';
 import RunningCarousel from "@/components/RunningCarousel";;
 
 const AboutMePage = () => {
-  const faqData = [
-    { question: "What is your design process?", answer: "I usually start with..." },
-    { question: "What are your favorite design tools?", answer: "I love using Figma..." },
-    { question: "What is your design philosophy?", answer: "I believe that good design..." },
-  ];
+  // const faqData = [
+  //   { question: "What is your design process?", answer: "I usually start with..." },
+  //   { question: "What are your favorite design tools?", answer: "I love using Figma..." },
+  //   { question: "What is your design philosophy?", answer: "I believe that good design..." },
+  // ];
   const [hovered, setHovered] = useState<"Gen" | "UI/UX" | "Skills" | "Software" | null>(null);
-  const router = useRouter();
+  // const router = useRouter();
 
   const design = [
     "/design.png"
@@ -147,7 +146,7 @@ const AboutMePage = () => {
           so users
         </h1>
         <p className="relative z-10 text-[clamp(2rem,5vw,5rem)] font-bold mb-8 text-center px-4"> 
-          don't have to{" "}
+          don&apos;t have to{" "}
           <span
             className="text-[#FF9A02] cursor-pointer"
             onMouseEnter={() => setHovered("UI/UX")}

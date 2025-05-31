@@ -9,7 +9,6 @@ import { ArrowRight } from 'lucide-react';
 const HeroSection = () => {
   const [hovered, setHovered] = useState<"Gen" | "UI/UX" | null>(null);
   const router = useRouter();
-  const [isButtonHovered, setIsButtonHovered] = React.useState(false);
 
   const genImages = [
     "/genicon1.jpg",
@@ -70,7 +69,7 @@ const HeroSection = () => {
 
       {/* Main Text */}
       <h1 className="text-[clamp(2rem,5vw,5rem)] font-bold mt-14 mb-2">
-        Hi, I'm{" "}
+        Hi, I&apos;m{" "}
         <span
           className="text-[#FF9A02] cursor-pointer"
           onMouseEnter={() => setHovered("Gen")}
@@ -93,9 +92,7 @@ const HeroSection = () => {
 
       <button
         onClick={handleLearnMoreClick}
-        className={`bg-[#FF9A02] text-white px-6 py-2 lg:py-3  text-lg rounded-md cursor-pointer flex items-center transition-transform duration-200 hover:scale-110`} // Added transition-transform hover:scale-110
-        onMouseEnter={() => setIsButtonHovered(true)}
-        onMouseLeave={() => setIsButtonHovered(false)}
+        className={`bg-[#FF9A02] text-white px-6 py-2 lg:py-3  text-lg rounded-md cursor-pointer flex items-center transition-transform duration-200 hover:scale-110`}
         style={{
           fontSize: "clamp(0.8rem, 2vw, 1.2rem)",
           paddingLeft: "clamp(1rem, 3vw, 2.5rem)",

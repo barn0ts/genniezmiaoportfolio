@@ -2,7 +2,6 @@
 import Image from "next/image";
 import HeroSection from "@/components/Hero";
 import NavbarSection from "@/components/Navbar";
-import dynamic from 'next/dynamic';
 
 export default function Home() {
   return (

@@ -10,7 +10,7 @@ export default function NavbarSection() {
   const router = useRouter();
   const resumeURL = "https://drive.google.com/file/d/1oUKShwkdocHt_HkFzigcJkpSPsBib6os/view?usp=sharing";
 
-  const pathname = usePathname();
+  // const pathname = usePathname();
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 

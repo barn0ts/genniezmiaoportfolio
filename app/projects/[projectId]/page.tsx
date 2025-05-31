@@ -1,5 +1,4 @@
 import React from 'react';
-import NavbarSection from "@/components/Navbar";
 import ProjectDetails from "@/components/ProjectDetails";
 
 interface Project {

@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
-import { ChevronLeft, ChevronRight, X, ArrowUpRight } from 'lucide-react';
+import {X, ArrowUpRight } from 'lucide-react';
 
 interface ProjectProps {
   project: {
@@ -32,7 +32,7 @@ interface ProjectProps {
 const ProjectDetails = ({ project }: ProjectProps) => {
   const router = useRouter();
 
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  // const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalImageSrc, setModalImageSrc] = useState<string | null>(null);
@@ -41,23 +41,23 @@ const ProjectDetails = ({ project }: ProjectProps) => {
     router.push("/projects");
   };
 
-  const handlePrevClick = () => {
-    if (project.previewImages.length === 0) return;
-    setCurrentImageIndex((prevIndex) =>
-      prevIndex === 0 ? project.previewImages.length - 1 : prevIndex - 1
-    );
-  };
+  // const handlePrevClick = () => {
+  //   if (project.previewImages.length === 0) return;
+  //   setCurrentImageIndex((prevIndex) =>
+  //     prevIndex === 0 ? project.previewImages.length - 1 : prevIndex - 1
+  //   );
+  // };
 
-  const handleNextClick = () => {
-    if (project.previewImages.length === 0) return;
-    setCurrentImageIndex((prevIndex) =>
-      prevIndex === project.previewImages.length - 1 ? 0 : prevIndex + 1
-    );
-  };
+  // const handleNextClick = () => {
+  //   if (project.previewImages.length === 0) return;
+  //   setCurrentImageIndex((prevIndex) =>
+  //     prevIndex === project.previewImages.length - 1 ? 0 : prevIndex + 1
+  //   );
+  // };
 
-  const handleThumbnailClick = (index: number) => {
-    setCurrentImageIndex(index);
-  };
+  // const handleThumbnailClick = (index: number) => {
+  //   setCurrentImageIndex(index);
+  // };
 
   const openImageModal = (src: string) => {
     setModalImageSrc(src);

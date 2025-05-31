@@ -3,7 +3,6 @@
 import React from 'react';
 import { X } from 'lucide-react';
 import { FaEnvelope, FaLinkedin, FaDiscord } from 'react-icons/fa';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 interface ContactModalProps {
     isOpen: boolean;
