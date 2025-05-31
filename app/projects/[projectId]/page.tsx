@@ -1,5 +1,6 @@
 import React from 'react';
 import ProjectDetails from "@/components/ProjectDetails";
+import { type Metadata } from 'next';
 
 interface Project {
   title: string;
@@ -569,11 +570,11 @@ const projectData: ProjectData = {
   };
 
 
-interface ProjectDetailsPageProps {
+type Props = {
   params: {
     projectId: string;
   };
-}
+};
 
 export async function generateStaticParams() {
   return Object.keys(projectData).map((projectId) => ({
@@ -581,17 +582,17 @@ export async function generateStaticParams() {
   }));
 }
 
-export default function ProjectDetailsPage({ params }: ProjectDetailsPageProps) {
+export default function ProjectDetailsPage({ params }: Props) {
   const { projectId } = params;
   const project = projectData[projectId as keyof ProjectData];
 
   if (!project) {
-    return <div>Project not found</div>; 
+    return <div>Project not found</div>;
   }
 
   return (
     <div>
-      <ProjectDetails project={project} /> 
+      <ProjectDetails project={project} />
     </div>
   );
 }
