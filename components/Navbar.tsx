@@ -1,16 +1,15 @@
 "use client";
 
 import { useRouter } from 'next/navigation';
-import { usePathname } from 'next/navigation';
 import React, { useState } from 'react';
 import ContactModal from './ContactModal';
+import Image from "next/image";
 
 export default function NavbarSection() {
   const menuItems = ["Home", "About Me", "Projects", "Resume", "Contact"];
   const router = useRouter();
   const resumeURL = "https://drive.google.com/file/d/1oUKShwkdocHt_HkFzigcJkpSPsBib6os/view?usp=sharing";
 
-  // const pathname = usePathname();
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -57,10 +56,12 @@ export default function NavbarSection() {
         <div className="flex items-center justify-between">
           {/* Profile Section */}
           <div className="flex items-center gap-3">
-            <img
+            <Image
               src="/genicon.jpg"
               alt="Profile"
               className="w-11 h-10 rounded-full"
+              width={100}
+              height={100}
             />
             <div className="flex flex-col">
               <p className="font-bold text-inherit">Genevieve N. Miao</p>

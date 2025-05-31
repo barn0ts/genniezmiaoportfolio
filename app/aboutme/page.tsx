@@ -7,7 +7,6 @@ import AnimatedSkills from "@/components/AnimatedSkills";
 import AnimatedSoftwares from "@/components/AnimatedSoftwares";
 import ExperienceSection from "@/components/ExperienceSection"; 
 import { ArrowDown } from "lucide-react"; 
-import { useRouter } from "next/navigation";
 import RunningCarousel from "@/components/RunningCarousel";;
 
 const AboutMePage = () => {
@@ -17,7 +16,6 @@ const AboutMePage = () => {
   //   { question: "What is your design philosophy?", answer: "I believe that good design..." },
   // ];
   const [hovered, setHovered] = useState<"Gen" | "UI/UX" | "Skills" | "Software" | null>(null);
-  // const router = useRouter();
 
   const design = [
     "/design.png"
