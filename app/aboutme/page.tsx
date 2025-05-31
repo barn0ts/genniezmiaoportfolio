@@ -28,10 +28,10 @@ const AboutMePage = () => {
   const imageSize = "clamp(100px, 20vw, 300px)";
 
   const imageSources = [
-    "/genicon1.jpg",
+    "/genicon1.JPG",
     "/genicon2.jpg",
     "/genicon3.jpg",
-    "/genicon4.jpg",
+    "/genicon4.JPG",
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);

@@ -11,7 +11,7 @@ const HeroSection = () => {
   const router = useRouter();
 
   const genImages = [
-    "/genicon1.jpg",
+    "/genicon1.JPG",
     "/genicon2.jpg",
     "/genicon3.jpg",
     "/genicon4.JPG",
