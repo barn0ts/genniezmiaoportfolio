@@ -262,36 +262,43 @@ const projectData: ProjectData = {
           num: "01",
           imageSrc: "/icare1.png", 
           imageAlt: "Atlas reporting and analytics section",
-          title: "Community Portal",
-          text: "The cover page introduces the system with its logo and a “Get Started” button. The logo reflects its purpose: ‘B’ for Barangay, ‘C’ for Connect, and the small building inside the “C” symbolizes the community, emphasizing connection and unity within the barangay."
+          title: "Find Your Care",
+          text: "This section showcases a list of available doctors, making it easy for users to explore healthcare professionals. It highlights both popular and favorited doctors, helping users find trusted care quickly."
         },
         {
           num: "02",
           imageSrc: "/icare2.png",
           imageAlt: "Atlas goal planning interface",
-          title: "Promoting Community Businesses",
-          text: "The Local Businesses feature showcases local small businesses within the barangay. Users can search, view complete details, and add businesses to their favorites for easy access—supporting community growth and local entrepreneurship."
+          title: "Know Your Doctor",
+          text: "Users can view complete information about a selected doctor—including their specialization, clinic details, and a time range of their availability—empowering them to make informed decisions before booking."
         },
         {
           num: "03",
           imageSrc: "/icare3.png", 
           imageAlt: "Atlas application dashboard showcasing strategic goals",
-          title: "Empowering Local Entrepreneurs",
-          text: "This feature allows business owners to easily introduce their business to the community by submitting key details such as the business name, date, image, and a brief description. It promotes visibility and helps connect them with potential local customers."
+          title: "Pick a Slot",
+          text: "Once a doctor is chosen, users can select a preferred date and time for their appointment. The intuitive interface ensures that scheduling is quick, personalized, and fits their availability."
         },
         {
           num: "04",
           imageSrc: "/icare5.png", 
           imageAlt: "Atlas goal planning interface",
-          title: "Community Updates and Engagement",
-          text: "The Announcement feature displays all barangay announcements in one place. Users can view full details, add announcements to favorites, and see how many people are going, encouraging awareness and participation in local events."
+          title: "My Health Vault",
+          text: "This feature gives users access to all their stored medical records in one secure place—making it easier to track past consultations, test results, and medical updates anytime."
         },
         {
           num: "05",
           imageSrc: "/icare6.png",
           imageAlt: "Atlas application dashboard showcasing strategic goals",
-          title: "Managing Community Announcements",
-          text: "Admins can edit or delete announcements and view the last modified date, allowing them to keep information accurate and up to date for the community."
+          title: "Vaccine Tracker",
+          text: "Users can view their vaccination records, including completed shots, upcoming due dates, and recommended vaccines. It helps keep their immunization history organized and up to date."
+        },
+        {
+          num: "06",
+          imageSrc: "/icare4.png",
+          imageAlt: "Atlas application dashboard showcasing strategic goals",
+          title: "Health Snapshot",
+          text: "Detailed health results like fasting blood sugar are displayed in this section. Each result comes with clear explanations and reference ranges, helping users better understand their health status at a glance."
         }
       ]
     },
