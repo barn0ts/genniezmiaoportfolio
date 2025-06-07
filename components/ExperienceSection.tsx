@@ -67,26 +67,80 @@ export default function ExperienceSection() {
 
   return (
     <div className="py-32 px-8 w-[80%] mx-auto flex flex-col md:flex-row">
+      <style jsx>{`
+        @keyframes float {
+          0%, 100% { 
+            transform: translateY(0px) rotate(12deg);
+          }
+          50% { 
+            transform: translateY(-10px) rotate(12deg);
+          }
+        }
+        
+        @keyframes float-reverse {
+          0%, 100% { 
+            transform: translateY(0px) rotate(-12deg);
+          }
+          50% { 
+            transform: translateY(-8px) rotate(-12deg);
+          }
+        }
+        
+        @keyframes float-slow {
+          0%, 100% { 
+            transform: translateY(0px) rotate(-6deg);
+          }
+          50% { 
+            transform: translateY(-12px) rotate(-6deg);
+          }
+        }
+        
+        @keyframes float-gentle {
+          0%, 100% { 
+            transform: translateY(0px) rotate(6deg);
+          }
+          50% { 
+            transform: translateY(-6px) rotate(6deg);
+          }
+        }
+        
+        .float-1 {
+          animation: float 2s ease-in-out infinite;
+        }
+        
+        .float-2 {
+          animation: float-reverse 1s ease-in-out infinite 0.5s;
+        }
+        
+        .float-3 {
+          animation: float-slow 3s ease-in-out infinite 1s;
+        }
+        
+        .float-4 {
+          animation: float-gentle 2s ease-in-out infinite 1.5s;
+        }
+      `}</style>
+      
       {/* Left side - Title with stickers */}
       <div className="w-full md:w-1/2 p-4 md:p-8 flex items-center justify-center relative">
         <div className="relative">
           <p className="text-[clamp(2rem,3vw,4rem)] font-bold">Where <span className='text-[#FF9A02]'>Learning</span></p>
           <p className="text-[clamp(2rem,3vw,4rem)] font-bold">Meets <span className='text-[#FF9A02]'>Experience</span></p>
 
-          {/* Stickers around the title */}
-          <div className="absolute -top-8 -left-8 sm:-top-12 sm:-left-12 bg-yellow-200 p-2 sm:p-3 rounded-full rotate-12 shadow-md">
+          {/* Floating Stickers around the title */}
+          <div className="absolute -top-8 -left-8 sm:-top-12 sm:-left-12 bg-yellow-200 p-2 sm:p-3 rounded-full shadow-md float-1 hover:scale-110 transition-transform cursor-pointer">
             <span className="text-xl">🤔</span>
           </div>
 
-          <div className="absolute -bottom-6 -left-6 sm:-bottom-10 sm:-left-8 bg-blue-200 p-2 sm:p-3 rounded-full -rotate-12 shadow-md">
+          <div className="absolute -bottom-6 -left-6 sm:-bottom-10 sm:-left-8 bg-blue-200 p-2 sm:p-3 rounded-full shadow-md float-2 hover:scale-110 transition-transform cursor-pointer">
             <span className="text-xl">💡</span>
           </div>
 
-          <div className="absolute -top-6 -right-6 sm:-top-8 sm:-right-8 bg-green-200 p-2 sm:p-3 rounded-full -rotate-6 shadow-md">
+          <div className="absolute -top-6 -right-6 sm:-top-8 sm:-right-8 bg-green-200 p-2 sm:p-3 rounded-full shadow-md float-3 hover:scale-110 transition-transform cursor-pointer">
             <span className="text-xl">📚</span>
           </div>
 
-          <div className="absolute -bottom-8 -right-8 sm:-bottom-12 sm:-right-12 bg-pink-200 p-2 sm:p-3 rounded-full rotate-6 shadow-md">
+          <div className="absolute -bottom-8 -right-8 sm:-bottom-12 sm:-right-12 bg-pink-200 p-2 sm:p-3 rounded-full shadow-md float-4 hover:scale-110 transition-transform cursor-pointer">
             <span className="text-xl">🔍</span>
           </div>
         </div>
