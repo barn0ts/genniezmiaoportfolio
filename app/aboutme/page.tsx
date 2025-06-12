@@ -30,8 +30,10 @@ const AboutMePage = () => {
   const imageSources = [
     "/genicon1.JPG",
     "/genicon2.jpg",
+    "/barong.JPG",
     "/genicon3.jpg",
     "/genicon4.JPG",
+    "/coloredbg.JPG",
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
