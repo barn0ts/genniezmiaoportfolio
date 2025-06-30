@@ -2,6 +2,17 @@
 
 import React, { useState } from "react";
 
+type ImageStyle = {
+  top?: string;
+  bottom?: string;
+  left?: string;
+  right?: string;
+  size?: string;
+  translateX?: string;
+  translateY?: string;
+  rotate?: string;
+};
+
 const ThingsToKnow = () => {
   const [showImages, setShowImages] = useState(false);
   const [visibleTextIndex, setVisibleTextIndex] = useState<number | null>(null);
@@ -32,21 +43,21 @@ const ThingsToKnow = () => {
   const imageSize = "clamp(40px, 8vw, 100px)";
   const sideImageSize = "clamp(60px, 12vw, 160px)";
 
-  const getImageStyle = (baseStyle: any, index: number) => {
-    const hasText = visibleTextIndex === index;
-    const moveUp = hasText ? 'translateY(-10px)' : '';
-    const baseRotation = baseStyle.rotate || `${(index * 7) % 15 - 7}deg`; 
-    
-    if (baseStyle.translateX && baseStyle.translateY) {
-      return `${baseStyle.translateX} ${baseStyle.translateY} ${moveUp} rotate(${baseRotation})`;
-    } else if (baseStyle.translateX) {
-      return `${baseStyle.translateX} ${moveUp} rotate(${baseRotation})`;
-    } else if (baseStyle.translateY) {
-      return `${baseStyle.translateY} ${moveUp} rotate(${baseRotation})`;
-    } else {
-      return `${moveUp} rotate(${baseRotation})`;
-    }
-  };
+  const getImageStyle = (baseStyle: ImageStyle, index: number) => {
+  const hasText = visibleTextIndex === index;
+  const moveUp = hasText ? 'translateY(-10px)' : '';
+  const baseRotation = baseStyle.rotate || `${(index * 7) % 15 - 7}deg`; 
+  
+  if (baseStyle.translateX && baseStyle.translateY) {
+    return `${baseStyle.translateX} ${baseStyle.translateY} ${moveUp} rotate(${baseRotation})`;
+  } else if (baseStyle.translateX) {
+    return `${baseStyle.translateX} ${moveUp} rotate(${baseRotation})`;
+  } else if (baseStyle.translateY) {
+    return `${baseStyle.translateY} ${moveUp} rotate(${baseRotation})`;
+  } else {
+    return `${moveUp} rotate(${baseRotation})`;
+  }
+};
 
   return (
     <div className="flex flex-col justify-center items-center h-screen text-center p-5 text-gray-900 overflow-hidden relative mt-20 mb-20">

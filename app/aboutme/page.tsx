@@ -78,24 +78,24 @@ const AboutMePage = () => {
     section2Ref.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
-  const firstVersion = [
-    "DESIGNER",
-    "FUR SISTER",
-    "BAKER",
-    "TECHIE",
-    "CLEAN FREAK",
-    "CREATIVE",
-    "ROMCOM LOVER",
-  ];
+  // const firstVersion = [
+  //   "DESIGNER",
+  //   "FUR SISTER",
+  //   "BAKER",
+  //   "TECHIE",
+  //   "CLEAN FREAK",
+  //   "CREATIVE",
+  //   "ROMCOM LOVER",
+  // ];
 
-  const secondVersion = [
-    "BE CURIOUS",
-    "ALWAYS GIVE YOUR BEST",
-    "NEVER STOP GROWING",
-    "STAY HUMBLE",
-    "WORK HARD",
-    "TRUST THE PROCESS",
-  ];
+  // const secondVersion = [
+  //   "BE CURIOUS",
+  //   "ALWAYS GIVE YOUR BEST",
+  //   "NEVER STOP GROWING",
+  //   "STAY HUMBLE",
+  //   "WORK HARD",
+  //   "TRUST THE PROCESS",
+  // ];
 
   // Animation classes
   const getAnimationClass = (sectionId: string, animationType: 'fadeIn' | 'slideUp' | 'slideLeft' | 'slideRight' = 'fadeIn') => {
@@ -251,9 +251,9 @@ const AboutMePage = () => {
               </span>
             </h2>
             <p className="text-[clamp(1.2rem, 2vw, 1.5rem)] text-gray-800 leading-relaxed">
-              I'm a UI/UX designer passionate about crafting <span className="text-[#FF9A02]">intuitive</span> and <span className="text-[#FF9A02] mr-1">visually compelling</span>
+              I am a UI/UX designer passionate about crafting <span className="text-[#FF9A02]">intuitive</span> and <span className="text-[#FF9A02] mr-1">visually compelling</span>
               experiences. My focus is on blending <span className="text-[#FF9A02]">creativity</span> with <span className="text-[#FF9A02] mr-1">functionality</span>
-              to design seamless, user-friendly interfaces. You'll most likely find me in
+              to design seamless, user-friendly interfaces. You will most likely find me in
               Figma—or if not, on Instagram, watching design reels to stay inspired and updated.
             </p>
           </div>
