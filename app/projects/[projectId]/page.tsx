@@ -573,6 +573,28 @@ const projectData: ProjectData = {
         }
       ],
     },
+    "sipnayan": {
+      title: "Sipnayan",
+      quote: "Isip at kasanayan para sa future mathematician",
+      description: "Sipnayan is an interactive learning platform designed to make math fun and easier for students. It offers engaging lessons, activities, and assessments that help improve problem-solving skills and boost confidence in mathematics. With Sipnayan, students can enjoy learning at their own pace, while teachers can track their progress and performance.",
+      imageSrc: "/lumiui.png",
+      myRole: "UI UX Desinger",
+      contributions: "As the sole creator of this project, I was responsible for the overall concept, research and design of the application. I initiated this idea out of a deep concern for the growing number of people silently struggling with their emotions. This project was built with empathy at its core—focusing on gentle, user-friendly interaction that allows users to express their mood through non-verbal methods such as colors, emojis, images, shapes, and sounds. Every decision, from visual selection to tone of messaging, was made to ensure the user feels understood and supported.",
+      myTeam: "Just Me",
+      learnings: "Through this project, I learned that emotions can be expressed in subtle ways—like choosing a color, image, shape, or sound that reflects one’s mood. I also realized how important it is to use gentle, thoughtful language to create a safe space for users. While the topic of emotional wellness is complex and evolving, I’m committed to improving this project through continuous research and development. This is just the beginning, and I hope Lumihood grows into a tool that people can trust and feel supported by.",
+      buttons: ["UI/UX DESIGN", "FIGMA", "CANVA"],
+      previewImages: ["/ui1.png", "/ui2.png", "/ui3.png", "/ui4.png", "/ui5.png", "/ui6.png", "/ui7.png", "/ui8.png", "/ui9.png", "/ui10.png", "/ui11.png", "/ui12.png"],
+      link: "https://www.figma.com/proto/D66Guwd2A1yzkKtOgiwAbJ/LUMIHOOD?node-id=61-328&t=Vhkge4baG1Cass7Y-1&scaling=scale-down&content-scaling=fixed&page-id=19%3A2&starting-point-node-id=19%3A3&show-proto-sidebar=1",
+      featureHighlights: [
+        {
+          num: "01",
+          imageSrc: "/lumi1.png", 
+          imageAlt: "Atlas reporting and analytics section",
+          title: "Meet Lumi",
+          text: "The introduction screen features Lumi, a friendly character who guides the user through their emotional journey—setting a warm, approachable tone for the app."
+        },
+      ],
+    },
   };
 
 

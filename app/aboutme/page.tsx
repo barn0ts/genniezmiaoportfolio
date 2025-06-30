@@ -7,14 +7,41 @@ import AnimatedSkills from "@/components/AnimatedSkills";
 import AnimatedSoftwares from "@/components/AnimatedSoftwares";
 import ExperienceSection from "@/components/ExperienceSection"; 
 import { ArrowDown } from "lucide-react"; 
-import RunningCarousel from "@/components/RunningCarousel";;
+import ThingsToKnow from '@/components/ThingsToKnow';
+
+// Custom hook for scroll animations
+const useScrollAnimation = () => {
+  const [visibleSections, setVisibleSections] = useState(new Set());
+  
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setVisibleSections(prev => new Set(prev).add(entry.target.id));
+          }
+        });
+      },
+      {
+        threshold: 0.1, // Trigger when 10% of the element is visible
+        rootMargin: '-50px 0px' // Start animation 50px before element is fully visible
+      }
+    );
+
+    // Observe all sections with scroll-animate class
+    const sections = document.querySelectorAll('.scroll-animate');
+    sections.forEach(section => observer.observe(section));
+
+    return () => {
+      sections.forEach(section => observer.unobserve(section));
+    };
+  }, []);
+
+  return visibleSections;
+};
 
 const AboutMePage = () => {
-  // const faqData = [
-  //   { question: "What is your design process?", answer: "I usually start with..." },
-  //   { question: "What are your favorite design tools?", answer: "I love using Figma..." },
-  //   { question: "What is your design philosophy?", answer: "I believe that good design..." },
-  // ];
+  const visibleSections = useScrollAnimation();
   const [hovered, setHovered] = useState<"Gen" | "UI/UX" | "Skills" | "Software" | null>(null);
 
   const design = [
@@ -69,6 +96,23 @@ const AboutMePage = () => {
     "WORK HARD",
     "TRUST THE PROCESS",
   ];
+
+  // Animation classes
+  const getAnimationClass = (sectionId: string, animationType: 'fadeIn' | 'slideUp' | 'slideLeft' | 'slideRight' = 'fadeIn') => {
+    const isVisible = visibleSections.has(sectionId);
+    const baseClass = 'scroll-animate transition-all duration-1000 ease-out';
+    
+    switch (animationType) {
+      case 'slideUp':
+        return `${baseClass} ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`;
+      case 'slideLeft':
+        return `${baseClass} ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`;
+      case 'slideRight':
+        return `${baseClass} ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`;
+      default: // fadeIn
+        return `${baseClass} ${isVisible ? 'opacity-100' : 'opacity-0'}`;
+    }
+  };
   
 
   return (
@@ -76,7 +120,7 @@ const AboutMePage = () => {
       <NavbarSection />
 
       {/* Section 1: Big Text with Gradient Background */}
-      <div className="relative h-screen flex flex-col justify-center items-center text-5xl font-bold overflow-hidden"> {/* Added overflow-hidden */}
+      <div className="relative h-screen flex flex-col justify-center items-center text-5xl font-bold overflow-hidden"> 
         <Image
           src="/gradientbg.png"
           alt="Background Gradient"
@@ -168,10 +212,13 @@ const AboutMePage = () => {
           </button>
       </div>
 
-
       <div className='bg-white'>
       {/* Section 2: Image Left, Text Right - Carousel */}
-      <div className="bg-white pt-32 md:pt-48 px-8 xl:ml-[-12rem] md:ml-[-1rem]" ref={section2Ref}>
+      <div 
+        className={`bg-white pt-32 md:pt-48 px-8 xl:ml-[-12rem] md:ml-[-1rem] ${getAnimationClass('section2', 'slideUp')}`}
+        ref={section2Ref}
+        id="section2"
+      >
         <div className="container mx-auto flex items-center justify-center flex-col md:flex-row">
           <div className={`w-full md:w-1/2 mb-8 md:mb-0 relative h-[20rem] md:h-[30rem] transition-transform duration-300 ${hovered === "Gen" ? "scale-110" : "scale-100"}`}>
             {imageSources.map((src, index) => (
@@ -204,25 +251,28 @@ const AboutMePage = () => {
               </span>
             </h2>
             <p className="text-[clamp(1.2rem, 2vw, 1.5rem)] text-gray-800 leading-relaxed">
-              I’m a UI/UX designer passionate about crafting <span className="text-[#FF9A02]">intuitive</span> and <span className="text-[#FF9A02] mr-1">visually compelling</span>
+              I'm a UI/UX designer passionate about crafting <span className="text-[#FF9A02]">intuitive</span> and <span className="text-[#FF9A02] mr-1">visually compelling</span>
               experiences. My focus is on blending <span className="text-[#FF9A02]">creativity</span> with <span className="text-[#FF9A02] mr-1">functionality</span>
-              to design seamless, user-friendly interfaces. You’ll most likely find me in
+              to design seamless, user-friendly interfaces. You'll most likely find me in
               Figma—or if not, on Instagram, watching design reels to stay inspired and updated.
             </p>
           </div>
         </div>
       </div>
 
-      <div className="mt-48 max-w-full px-8 bg-white">
-        <RunningCarousel items={firstVersion} direction="left"/>
+      {/* Section 3: 8 Things You Should Know */}
+      <div 
+        className={getAnimationClass('section3', 'slideUp')}
+        id="section3"
+      >
+        <ThingsToKnow/>
       </div>
 
-      <div className="mb-20 max-w-full px-8 bg-white">
-        <RunningCarousel items={secondVersion} direction="right"/>
-      </div>
-
-      {/* Section 3: Text Left, Animated Skills Right */}
-      <div className="bg-white mt-[-10rem] px-8 flex items-center justify-center min-h-screen">
+      {/* Section 4: Text Left, Animated Skills Right */}
+      <div 
+        className={`bg-white mt-[-10rem] px-8 flex items-center justify-center min-h-screen ${getAnimationClass('section4', 'slideUp')}`}
+        id="section4"
+      >
         <div className="container mx-auto flex items-center justify-center flex-col md:flex-row">
           <div className="w-[25rem] md:w-[30rem] pl-0 md:pl-auto lg:ml-[10rem] text-center md:text-left mb-10 md:mb-0">
             <h2 className="text-[clamp(1.2rem,3vw,2rem)] font-bold mb-4">
@@ -246,8 +296,11 @@ const AboutMePage = () => {
         </div>
       </div>
 
-      {/* Section 4: Image Left, Text Right */}
-      <div className="bg-white pb-32 md:pb-48 px-8 xl:ml-[-2rem]">
+      {/* Section 5: Image Left, Text Right */}
+      <div 
+        className={`bg-white pb-32 md:pb-48 px-8 xl:ml-[-2rem] ${getAnimationClass('section5', 'slideUp')}`}
+        id="section5"
+      >
         <div className="container mx-auto flex items-center justify-center flex-col md:flex-row">
           <div className={`w-full md:w-1/2 flex items-center justify-center xl:ml-[-12rem] transition-transform duration-300 ${hovered === "Software" ? "scale-110" : "scale-100"}`}>
             <AnimatedSoftwares />
@@ -268,8 +321,11 @@ const AboutMePage = () => {
       </div>
     </div>
 
-      {/* Section 5: Experience  */}
-      <div className="relative py-10 flex justify-center items-center overflow-hidden"> 
+      {/* Section 6: Experience  */}
+      <div 
+        className={`relative py-10 flex justify-center items-center overflow-hidden ${getAnimationClass('section6', 'slideUp')}`}
+        id="section6"
+      > 
         <Image
           src="/gradientbg.png"
           alt="Background Gradient"

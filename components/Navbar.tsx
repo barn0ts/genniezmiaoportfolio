@@ -8,7 +8,7 @@ import Image from "next/image";
 export default function NavbarSection() {
   const menuItems = ["Home", "About Me", "Projects", "Resume", "Contact"];
   const router = useRouter();
-  const resumeURL = "https://drive.google.com/file/d/1oUKShwkdocHt_HkFzigcJkpSPsBib6os/view?usp=sharing";
+  const resumeURL = "https://drive.google.com/file/d/1Zzy9mlG6_cpY7dFkfUB5HaxbLuxeGnYs/view?usp=sharing";
 
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);

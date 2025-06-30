@@ -7,6 +7,12 @@ import Link from 'next/link';
 
 const projectData = [
   {
+    imageSrc: "/sipnayanui.png",
+    title: "Sipnayan",
+    description: "Sipnayan is a fun and interactive learning app designed to help young students improve their math skills through engaging activities, lessons, and assessments.",
+    projectId: "sipnayan"
+  },
+  {
     imageSrc: "/lumiui.png",
     title: "Lumihood",
     description: "Lumihood is a gentle mood journal app designed to help you reconnect with your emotions through colors, visuals, sounds, and reflections.",
@@ -47,6 +53,8 @@ const projectData = [
 const ProjectsPage = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
+  const [inProgressClicked, setInProgressClicked] = useState<string | null>(null);
+
   return (
     <div>
       <NavbarSection />
@@ -76,11 +84,38 @@ const ProjectsPage = () => {
                   <div className="p-6">
                     <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
                     <p className="text-gray-700 mb-4">{project.description}</p>
-                    <Link href={`/projects/${project.projectId}`}> 
+                    {/* <Link href={`/projects/${project.projectId}`}> 
                       <button className="bg-[#FF9A02] text-white px-4 py-2 rounded-md cursor-pointer">
                         View Project
                       </button>
-                    </Link>
+                    </Link> */}
+                    {/* --- MODIFICATION START --- */}
+                    {/* 2. Check if the project is 'sipnayan' */}
+                    {project.projectId === "sipnayan" ? (
+                      // If it is, render a button with an onClick handler
+                      <div>
+                        <button 
+                          className="bg-[#FF9A02] text-white px-4 py-2 rounded-md cursor-pointer"
+                          onClick={() => setInProgressClicked(project.projectId)}
+                        >
+                          View Project
+                        </button>
+                        {/* 3. Conditionally show the message when the state matches this project */}
+                        {inProgressClicked === project.projectId && (
+                          <p className="text-[#FF9A02] mt-2 text-sm">
+                            Currently in progress...
+                          </p>
+                        )}
+                      </div>
+                    ) : (
+                      // Otherwise, render the original Link component for navigation
+                      <Link href={`/projects/${project.projectId}`}> 
+                        <button className="bg-[#FF9A02] text-white px-4 py-2 rounded-md cursor-pointer">
+                          View Project
+                        </button>
+                      </Link>
+                    )}
+                    {/* --- MODIFICATION END --- */}
                   </div>
                 </div>
               </div>
