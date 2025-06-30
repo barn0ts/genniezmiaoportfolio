@@ -250,7 +250,7 @@ const AboutMePage = () => {
                 {" "}Gen
               </span>
             </h2>
-            <p className="text-[clamp(1.2rem, 2vw, 1.5rem)] text-gray-800 leading-relaxed">
+            <p className="text-[clamp(0.8rem, 5vw, 1.5rem)] text-gray-800 leading-relaxed">
               I am a UI/UX designer passionate about crafting <span className="text-[#FF9A02]">intuitive</span> and <span className="text-[#FF9A02] mr-1">visually compelling</span>
               experiences. My focus is on blending <span className="text-[#FF9A02]">creativity</span> with <span className="text-[#FF9A02] mr-1">functionality</span>
               to design seamless, user-friendly interfaces. You will most likely find me in
@@ -283,7 +283,7 @@ const AboutMePage = () => {
               >Skills</span>
             </h2>
 
-            <p className="text-[clamp(1.2rem, 2vw, 1.5rem)] text-gray-800 leading-relaxed">
+            <p className="text-[clamp(0.8rem, 5vw, 1.5rem)] text-gray-800 leading-relaxed">
               As a UI/UX designer, I specialize in crafting intuitive and user-friendly designs.
               I excel in wireframing, collaboration, and actively listening to user feedback to refine
               experiences. I stay flexible, incorporating design trends to create visually compelling
@@ -313,7 +313,7 @@ const AboutMePage = () => {
                 onMouseLeave={() => setHovered(null)}
               >Software</span> of Choice
             </h2>
-            <p className="text-[clamp(1.2rem, 2vw, 1.5rem)] text-gray-800 leading-relaxed">
+            <p className="text-[clamp(0.8rem, 5vw, 1.5rem)] text-gray-800 leading-relaxed">
               I rely on Figma for designing, ChatGPT for brainstorming, and Notion for organizing ideas. Discord keeps me connected, while Dribbble and Coolors inspire creativity. Canva helps me with quick visuals.
             </p>
           </div>

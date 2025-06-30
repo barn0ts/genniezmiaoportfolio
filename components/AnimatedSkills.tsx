@@ -102,8 +102,8 @@ export default function AnimatedSkills() {
   return (
     <div className="w-full md:w-1/2 mb-8 md:mb-0 relative h-[20rem] md:h-[30rem] xl:ml-[5rem] bg-white border border-gray-200 rounded-lg overflow-hidden flex items-center justify-center"
       style={{
-        maxWidth: "clamp(200px, 70vw, 500px)",
-        maxHeight: "clamp(150px, 50vh, 400px)",
+        maxWidth: "clamp(180px, 50vw, 480px)",
+        maxHeight: "clamp(130px, 30vh, 380px)",
       }}
     >
 
@@ -111,7 +111,7 @@ export default function AnimatedSkills() {
         {skills.map((skill, index) => (
           <motion.div
             key={index}
-            className={`absolute left-1/2 top-1/2 ${skill.color} px-4 py-2 rounded-full border text-sm font-medium shadow-sm`}
+            className={`absolute left-1/2 top-1/2 ${skill.color} px-4 py-2 rounded-full border text-[clamp(0.8rem, 5vw, 1.5rem)] font-medium shadow-sm`}
             style={{
               translateX: "-50%", 
               translateY: "-50%",
