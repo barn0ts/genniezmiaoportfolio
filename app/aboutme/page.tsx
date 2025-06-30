@@ -179,7 +179,7 @@ const AboutMePage = () => {
         </div>
 
         {/* Text Content */}
-        <h1 className="relative z-10 text-[clamp(2rem,5vw,5rem)] font-bold mt-14 mb-8 text-center px-4"> 
+        <p className="relative z-10 text-[clamp(2rem,5vw,5rem)] font-bold mt-14 mb-8 text-center px-4"> 
           <span
             className="text-[#FF9A02] cursor-pointer mr-2 md:mr-5"
             onMouseEnter={() => setHovered("Gen")}
@@ -188,7 +188,7 @@ const AboutMePage = () => {
             I design,
           </span>
           so users
-        </h1>
+        </p>
         <p className="relative z-10 text-[clamp(2rem,5vw,5rem)] font-bold mb-8 text-center px-4"> 
           don&apos;t have to{" "}
           <span
@@ -233,7 +233,7 @@ const AboutMePage = () => {
                   alt={`About Me Image ${index + 1}`}
                   width={600}
                   height={400}
-                  className="rounded-lg shadow-lg mx-auto object-cover h-full w-full"
+                  className="rounded-lg shadow-lg mx-auto object-cover w-[50%] h-full sm:w-[70%] md:w-[60%] lg:w-[50%]"
                   style={{ objectFit: "cover", height: "100%", width: "50%" }}
                 />
               </div>
@@ -250,7 +250,7 @@ const AboutMePage = () => {
                 {" "}Gen
               </span>
             </h2>
-            <p className="text-[clamp(0.8rem, 5vw, 1.5rem)] text-gray-800 leading-relaxed">
+            <p className="text-[clamp(0.8rem, 5vw, 1.5rem)] text-gray-800 leading-relaxed px-0 sm:px-4">
               I am a UI/UX designer passionate about crafting <span className="text-[#FF9A02]">intuitive</span> and <span className="text-[#FF9A02] mr-1">visually compelling</span>
               experiences. My focus is on blending <span className="text-[#FF9A02]">creativity</span> with <span className="text-[#FF9A02] mr-1">functionality</span>
               to design seamless, user-friendly interfaces. You will most likely find me in
@@ -283,7 +283,7 @@ const AboutMePage = () => {
               >Skills</span>
             </h2>
 
-            <p className="text-[clamp(0.8rem, 5vw, 1.5rem)] text-gray-800 leading-relaxed">
+            <p className="text-[clamp(0.8rem, 5vw, 1.5rem)] text-gray-800 leading-relaxed px-0 sm:px-4">
               As a UI/UX designer, I specialize in crafting intuitive and user-friendly designs.
               I excel in wireframing, collaboration, and actively listening to user feedback to refine
               experiences. I stay flexible, incorporating design trends to create visually compelling
@@ -313,7 +313,7 @@ const AboutMePage = () => {
                 onMouseLeave={() => setHovered(null)}
               >Software</span> of Choice
             </h2>
-            <p className="text-[clamp(0.8rem, 5vw, 1.5rem)] text-gray-800 leading-relaxed">
+            <p className="text-[clamp(0.8rem, 5vw, 1.5rem)] text-gray-800 leading-relaxed px-0 sm:px-4">
               I rely on Figma for designing, ChatGPT for brainstorming, and Notion for organizing ideas. Discord keeps me connected, while Dribbble and Coolors inspire creativity. Canva helps me with quick visuals.
             </p>
           </div>

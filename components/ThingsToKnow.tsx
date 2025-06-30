@@ -126,11 +126,9 @@ const ThingsToKnow = () => {
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-        <h1 className="text-[clamp(2rem,5vw,5rem)] font-bold mt-14">
-          <span className="text-[#FF9A02] cursor-pointer" onClick={() => setShowImages(!showImages)}>
+        <p className="text-[#FF9A02] text-[clamp(2rem,5vw,5rem)] font-bold mt-14 cursor-pointer" onClick={() => setShowImages(!showImages)}>
             8 things
-          </span>
-        </h1>
+        </p>
         <span className="text-[clamp(2rem,5vw,5rem)] font-bold cursor-pointer mt-[-1rem]" onClick={() => setShowImages(!showImages)}>
           you should know
         </span>
