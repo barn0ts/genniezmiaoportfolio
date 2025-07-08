@@ -7,16 +7,16 @@ import Link from 'next/link';
 
 const projectData = [
   {
-    imageSrc: "/sipnayanui.png",
-    title: "Sipnayan",
-    description: "Sipnayan is a fun and interactive learning app designed to help young students improve their math skills through engaging activities, lessons, and assessments.",
-    projectId: "sipnayan"
-  },
-  {
     imageSrc: "/lumiui.png",
     title: "Lumihood",
     description: "Lumihood is a gentle mood journal app designed to help you reconnect with your emotions through colors, visuals, sounds, and reflections.",
     projectId: "lumihood"
+  },
+  {
+    imageSrc: "/sipnayanui.png",
+    title: "Sipnayan",
+    description: "Sipnayan is a fun and interactive learning app designed to help young students improve their math skills through engaging activities, lessons, and assessments.",
+    projectId: "sipnayan"
   },
   {
     imageSrc: "/dailyui.png",
@@ -91,7 +91,7 @@ const ProjectsPage = () => {
                     </Link> */}
                     {/* --- MODIFICATION START --- */}
                     {/* 2. Check if the project is 'sipnayan' */}
-                    {project.projectId === "sipnayan" ? (
+                    {project.projectId === "lumihood" ? (
                       // If it is, render a button with an onClick handler
                       <div>
                         <button 

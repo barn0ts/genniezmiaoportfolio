@@ -480,118 +480,104 @@ const projectData: ProjectData = {
           title: "Meet Lumi",
           text: "The introduction screen features Lumi, a friendly character who guides the user through their emotional journey—setting a warm, approachable tone for the app."
         },
-        {
-          num: "02",
-          imageSrc: "/lumi2.png",
-          imageAlt: "Atlas goal planning interface",
-          title: "Message to Tomorrow",
-          text: "A reflective space where users write notes to their future selves—these messages are locked and shown after a year, encouraging growth and introspection."
-        },
-        {
-          num: "03",
-          imageSrc: "/lumi3.png", 
-          imageAlt: "Atlas application dashboard showcasing strategic goals",
-          title: "Home Page",
-          text: "The home interface opens with a daily insight. Users are greeted with thoughtful content such as categories that organize healing resources, peaceful sessions designed for unwinding, and the daily light—a soft touchpoint of encouragement."
-        },
-        {
-          num: "04",
-          imageSrc: "/lumi4.png", 
-          imageAlt: "Atlas goal planning interface",
-          title: "First Touch of Emotion",
-          text: "Before diving into the deeper emotional tools, users are asked how they’re currently feeling. This simple check-in moment allows space for presence and honesty—framing the experience with mindfulness."
-        },
-        {
-          num: "05",
-          imageSrc: "/lumi5.png",
-          imageAlt: "Atlas application dashboard showcasing strategic goals",
-          title: "When Emotions Take Color",
-          text: "Here, feelings find expression through color. Instead of using words, users are drawn to hues that mirror their inner world—yellow for joy, red for anger, blue for sorrow, green for anxiety, violet for shock, and gray for detachment."
-        },
-        {
-          num: "06",
-          imageSrc: "/lumi6.png", 
-          imageAlt: "Atlas reporting and analytics section",
-          title: "Seeing Yourself in Another Face",
-          text: "Users choose a character whose facial expression or demeanor reflects their present emotional state. This mirrors the real-world way we empathize—through body language, eyes, and posture—offering a visual method to pinpoint emotions with greater depth."
-        },
-        {
-          num: "07",
-          imageSrc: "/lumi7.png",
-          imageAlt: "Atlas goal planning interface",
-          title: "The Picture That Speaks for You",
-          text: "Through curated images, users select the one that feels most aligned with their internal experience. Visual cues often tap into subconscious emotions, making this feature an artistic and psychological method of emotional recognition."
-        },
-        {
-          num: "08",
-          imageSrc: "/lumi8.png", 
-          imageAlt: "Atlas application dashboard showcasing strategic goals",
-          title: "Shape of a Feeling",
-          text: "By choosing from abstract shapes, users lean into the design psychology of form—sharp lines for tension or anger, smooth curves for peace. The shapes act as emotional mirrors, revealing mood through geometry."
-        },
-        {
-          num: "09",
-          imageSrc: "/lumi9.png", 
-          imageAlt: "Atlas goal planning interface",
-          title: "The Sound of a State",
-          text: "Auditory perception can instantly ground emotion. Whether it’s a calming breeze, static noise, or gentle melody, the chosen sound helps users connect their feelings to a sensory experience. It enhances emotional recognition using sonic resonance."
-        },
-        {
-          num: "10",
-          imageSrc: "/lumi10.png",
-          imageAlt: "Atlas application dashboard showcasing strategic goals",
-          title: "Journal Note",
-          text: "An optional journaling space where users can freely express their thoughts—offering context and deeper emotional clarity through written reflection."
-        },
-        {
-          num: "11",
-          imageSrc: "/lumi11.png",
-          imageAlt: "Atlas application dashboard showcasing strategic goals",
-          title: "Emotion Result",
-          text: "Based on all inputs, Lumi the AI analyzes and determines the most likely emotion being felt today, providing an empathetic summary of the user’s emotional state."
-        },
-        {
-          num: "12",
-          imageSrc: "/lumi12.png",
-          imageAlt: "Atlas application dashboard showcasing strategic goals",
-          title: "Recommendation Section",
-          text: "Once the emotion is identified, Lumi provides personalized suggestions—like light breathing exercises, calming music, or comforting affirmations to help the user cope and heal."
-        },
-        {
-          num: "13",
-          imageSrc: "/lumi13.png",
-          imageAlt: "Atlas application dashboard showcasing strategic goals",
-          title: "Emotion Calendar",
-          text: "A visual map of the user’s emotions across the month—highlighting patterns and emotional cycles for self-awareness and mental wellness tracking."
-        },
-        {
-          num: "14",
-          imageSrc: "/lumi14.png",
-          imageAlt: "Atlas application dashboard showcasing strategic goals",
-          title: "Dashboard",
-          text: "The Dashboard displays a user’s emotional summary for the day, highlights of significant moods, a breakdown of their monthly emotional trends, and a record of actions they’ve taken to manage their feelings—turning emotions into meaningful data."
-        }
       ],
     },
     "sipnayan": {
       title: "Sipnayan",
       quote: "Isip at kasanayan para sa future mathematician",
       description: "Sipnayan is an interactive learning platform designed to make math fun and easier for students. It offers engaging lessons, activities, and assessments that help improve problem-solving skills and boost confidence in mathematics. With Sipnayan, students can enjoy learning at their own pace, while teachers can track their progress and performance.",
-      imageSrc: "/lumiui.png",
+      imageSrc: "/sipnayanui.png",
       myRole: "UI UX Desinger",
-      contributions: "As the sole creator of this project, I was responsible for the overall concept, research and design of the application. I initiated this idea out of a deep concern for the growing number of people silently struggling with their emotions. This project was built with empathy at its core—focusing on gentle, user-friendly interaction that allows users to express their mood through non-verbal methods such as colors, emojis, images, shapes, and sounds. Every decision, from visual selection to tone of messaging, was made to ensure the user feels understood and supported.",
+      contributions: "As a member of the Sipnayan team, I was primarily responsible for the overall design of the application. While the project was a collaborative effort, I took the lead in crafting the visual interface, layout, and user experience. I designed features that make learning math fun and meaningful for Grade 3 students, including interactive lessons, a friendly AI guide named Sip, and cultural rewards like the Mayon Volcano, Santo Niño statue, and the traditional jeepney.",
       myTeam: "Just Me",
-      learnings: "Through this project, I learned that emotions can be expressed in subtle ways—like choosing a color, image, shape, or sound that reflects one’s mood. I also realized how important it is to use gentle, thoughtful language to create a safe space for users. While the topic of emotional wellness is complex and evolving, I’m committed to improving this project through continuous research and development. This is just the beginning, and I hope Lumihood grows into a tool that people can trust and feel supported by.",
+      learnings: "This experience taught me how to design with empathy, especially for children who are still developing their math skills. I learned how to present educational content in a simple yet engaging way, and how to incorporate local culture to make learning more relatable. I also gained a better understanding of user interface (UI) and user experience (UX) design principles, particularly when designing for both young learners and their parents.",
       buttons: ["UI/UX DESIGN", "FIGMA", "CANVA"],
       previewImages: ["/ui1.png", "/ui2.png", "/ui3.png", "/ui4.png", "/ui5.png", "/ui6.png", "/ui7.png", "/ui8.png", "/ui9.png", "/ui10.png", "/ui11.png", "/ui12.png"],
-      link: "https://www.figma.com/proto/D66Guwd2A1yzkKtOgiwAbJ/LUMIHOOD?node-id=61-328&t=Vhkge4baG1Cass7Y-1&scaling=scale-down&content-scaling=fixed&page-id=19%3A2&starting-point-node-id=19%3A3&show-proto-sidebar=1",
+      link: "https://www.figma.com/proto/vRgbhfogTEeyhTHBIl07Fy/Sipnayan?node-id=165-185&t=oWLzGpjevSjtD1ic-1&scaling=min-zoom&content-scaling=fixed&page-id=165%3A2&starting-point-node-id=165%3A185&show-proto-sidebar=1",
       featureHighlights: [
         {
           num: "01",
-          imageSrc: "/lumi1.png", 
+          imageSrc: "/sip1.png", 
           imageAlt: "Atlas reporting and analytics section",
-          title: "Meet Lumi",
-          text: "The introduction screen features Lumi, a friendly character who guides the user through their emotional journey—setting a warm, approachable tone for the app."
+          title: "Who Uses Sipnayan?",
+          text: "Sipnayan is designed for three types of users: students, parents, and teachers. Each user has a unique experience tailored to their role—students enjoy guided learning and fun rewards, parents monitor progress and support learning at home, while teachers track performance and guide classroom instruction."
+        },
+        {
+          num: "02",
+          imageSrc: "/sip2.png",
+          imageAlt: "Atlas goal planning interface",
+          title: "Design Your Own Sip",
+          text: "Students can design their very own Sip, the helpful AI guide that motivates, gives hints, and makes learning more fun! From colors to expressions, make Sip your own!"
+        },
+        {
+          num: "03",
+          imageSrc: "/sip3.png", 
+          imageAlt: "Atlas application dashboard showcasing strategic goals",
+          title: "Student Homepage",
+          text: "The homepage lets students see the lessons they recently worked on, view their personalized learning path, and discover popular lessons that they can explore next."
+        },
+        {
+          num: "04",
+          imageSrc: "/sip4.png", 
+          imageAlt: "Atlas goal planning interface",
+          title: "Lessons Page",
+          text: "Students can browse through all their math lessons here. Completed lessons are highlighted and marked with a ribbon so learners can feel proud of their progress."
+        },
+        {
+          num: "05",
+          imageSrc: "/sip5.png",
+          imageAlt: "Atlas application dashboard showcasing strategic goals",
+          title: "Lesson Roadmap",
+          text: "Each lesson is broken down into smaller subtopics. Students can hop through these steps one at a time, giving them a clear and guided way to master the topic."
+        },
+        {
+          num: "06",
+          imageSrc: "/sip6.png", 
+          imageAlt: "Atlas reporting and analytics section",
+          title: "Quiz Section",
+          text: "Students answer questions in a fun, interactive format. After each correct answer, they receive encouraging feedback — in Filipino — like “Tama ka! Galing!” to boost confidence and make learning lively."
+        },
+        {
+          num: "07",
+          imageSrc: "/sip7.png",
+          imageAlt: "Atlas goal planning interface",
+          title: "Treasure Section",
+          text: "After completing a lesson, students can tap the treasure chest to reveal a surprise item from a region in the Philippines — from Mayon Volcano to Santo Niño statue! A fun and cultural reward for every effort!"
+        },
+        {
+          num: "08",
+          imageSrc: "/sip8.png", 
+          imageAlt: "Atlas application dashboard showcasing strategic goals",
+          title: "Ask for Help Anytime",
+          text: "Students can talk to Sip, their friendly AI guide, whenever they feel stuck. Sip gives hints and explanations in a simple, child-friendly way that’s easy to understand."
+        },
+        {
+          num: "09",
+          imageSrc: "/sip9.png", 
+          imageAlt: "Atlas goal planning interface",
+          title: "Lesson Overview Page",
+          text: "Before starting a lesson, students can read a short description of what they’ll learn and discover what they’ll earn — like pearls, diamonds, and cultural treasures!"
+        },
+        {
+          num: "10",
+          imageSrc: "/sip10.png",
+          imageAlt: "Atlas application dashboard showcasing strategic goals",
+          title: "Treasure Collection",
+          text: "All the treasures that students unlock are safely stored here. They can look back, revisit what they’ve earned, and feel proud of the math journey they’ve completed."
+        },
+        {
+          num: "11",
+          imageSrc: "/sip11.png",
+          imageAlt: "Atlas application dashboard showcasing strategic goals",
+          title: "Parent Dashboard",
+          text: "Parents can view their child’s recent activities, completed lessons, areas needing attention, and all collected treasures. It’s a helpful tool to support learning at home and see where their child shines — or needs help."
+        },
+        {
+          num: "12",
+          imageSrc: "/sip12.png",
+          imageAlt: "Atlas application dashboard showcasing strategic goals",
+          title: "Teacher Dashboard",
+          text: "Teachers can track their students’ progress, identify learning gaps, and manage lesson plans. With clear insights into each learner’s journey, teachers can give the right support at the right time."
         },
       ],
     },
