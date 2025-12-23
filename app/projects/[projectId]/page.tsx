@@ -466,19 +466,96 @@ const projectData: ProjectData = {
       description: "Lumihood is a calming and intuitive mood journal app that helps you gently understand and care for your emotions. By selecting visuals like colors, shapes, sounds, and images, the AI interprets your mood and provides thoughtful insights without needing the right words. With daily check-ins, soothing suggestions, and personal reflections, Lumihood creates a safe space for emotional growth. In the future, it may also serve as a helpful tool for psychiatrists to better understand their clients’ emotional patterns.",
       imageSrc: "/lumiui.png",
       myRole: "UI UX Desinger",
-      contributions: "As the sole creator of this project, I was responsible for the overall concept, research and design of the application. I initiated this idea out of a deep concern for the growing number of people silently struggling with their emotions. This project was built with empathy at its core—focusing on gentle, user-friendly interaction that allows users to express their mood through non-verbal methods such as colors, emojis, images, shapes, and sounds. Every decision, from visual selection to tone of messaging, was made to ensure the user feels understood and supported.",
+      contributions: "As the sole creator of this project, I was responsible for the overall concept, research and design of the application. I initiated this idea out of a deep concern for the growing number of people silently struggling with their emotions. This project was built with empathy at its core—focusing on gentle, user-friendly interaction that allows users to express their mood through non-verbal methods such as colors, emojis, images, and sounds. Every decision, from visual selection to tone of messaging, was made to ensure the user feels understood and supported.",
       myTeam: "Just Me",
-      learnings: "Through this project, I learned that emotions can be expressed in subtle ways—like choosing a color, image, shape, or sound that reflects one’s mood. I also realized how important it is to use gentle, thoughtful language to create a safe space for users. While the topic of emotional wellness is complex and evolving, I’m committed to improving this project through continuous research and development. This is just the beginning, and I hope Lumihood grows into a tool that people can trust and feel supported by.",
+      learnings: "Through this project, I learned that emotions can be expressed in subtle ways—like choosing a color, image, what they need, season, or sound that reflects one’s mood. I also realized how important it is to use gentle, thoughtful language to create a safe space for users. While the topic of emotional wellness is complex and evolving, I’m committed to improving this project through continuous research and development. This is just the beginning, and I hope Lumihood grows into a tool that people can trust and feel supported by.",
       buttons: ["UI/UX DESIGN", "FIGMA", "CANVA"],
       previewImages: ["/ui1.png", "/ui2.png", "/ui3.png", "/ui4.png", "/ui5.png", "/ui6.png", "/ui7.png", "/ui8.png", "/ui9.png", "/ui10.png", "/ui11.png", "/ui12.png"],
-      link: "https://www.figma.com/proto/D66Guwd2A1yzkKtOgiwAbJ/LUMIHOOD?node-id=61-328&t=Vhkge4baG1Cass7Y-1&scaling=scale-down&content-scaling=fixed&page-id=19%3A2&starting-point-node-id=19%3A3&show-proto-sidebar=1",
+      link: "https://www.figma.com/proto/D66Guwd2A1yzkKtOgiwAbJ/LUMIHOOD?node-id=19-3&t=PbxsKSTqjF0QeMfu-1&scaling=scale-down&content-scaling=fixed&page-id=19%3A2&starting-point-node-id=19%3A3&show-proto-sidebar=1",
       featureHighlights: [
         {
           num: "01",
           imageSrc: "/lumi1.png", 
           imageAlt: "Atlas reporting and analytics section",
-          title: "Meet Lumi",
-          text: "The introduction screen features Lumi, a friendly character who guides the user through their emotional journey—setting a warm, approachable tone for the app."
+          title: "The Homepage",
+          text: "This is a calm space created for users to pause, slow down, and gently check in with themselves. There’s no right or wrong way to begin; they just have to take a moment and continue when they’re ready."
+        },
+        {
+          num: "02",
+          imageSrc: "/lumi2.png", 
+          imageAlt: "Atlas reporting and analytics section",
+          title: "First Instinct",
+          text: "Colors can reflect feelings we don’t always have words for. Users can select the color that they’re naturally drawn to, without overthinking, and let it represent how they feel right now."
+        },
+        {
+          num: "03",
+          imageSrc: "/lumi3.png", 
+          imageAlt: "Atlas reporting and analytics section",
+          title: "Inner State",
+          text: "Each character represents a different emotional experience. Users can select the one that feels closest to what they’re experiencing in this moment, even if it doesn’t perfectly describe everything."
+        },
+        {
+          num: "04",
+          imageSrc: "/lumi4.png", 
+          imageAlt: "Atlas reporting and analytics section",
+          title: "What Speaks",
+          text: "Sometimes images express emotions better than words. Users can select the picture that resonates with them and reflects how this moment feels from the inside."
+        },
+        {
+          num: "05",
+          imageSrc: "/lumi5.png", 
+          imageAlt: "Atlas reporting and analytics section",
+          title: "What Matters Now",
+          text: "Everyone needs something different depending on how they’re feeling. Users can select what they need most right now, and we’ll use it to guide what comes next."
+        },
+        {
+          num: "06",
+          imageSrc: "/lumi6.png", 
+          imageAlt: "Atlas reporting and analytics section",
+          title: "Resonance",
+          text: "Sounds can mirror their inner state or help shift it. Users can select the sound that feels most aligned with their emotions right now."
+        },
+        {
+          num: "07",
+          imageSrc: "/lumi7.png", 
+          imageAlt: "Atlas reporting and analytics section",
+          title: "Your Season",
+          text: "Seasons often reflect emotional states—some feel light and open, others quiet or heavy. Users can select the season that best matches how this moment feels to them."
+        },
+        {
+          num: "08",
+          imageSrc: "/lumi8.png", 
+          imageAlt: "Atlas reporting and analytics section",
+          title: "Let It Out",
+          text: "This is a private space for users to write freely. Users can reflect on their day, express a thought, or simply let things out without worrying about structure or judgment."
+        },
+        {
+          num: "09",
+          imageSrc: "/lumi9.png", 
+          imageAlt: "Atlas reporting and analytics section",
+          title: "Right Now",
+          text: "Based on the choices the users made, this is a reflection of what their may be feeling in this moment. They can use it as a guide for understanding themselves, not as a fixed label."
+        },
+        {
+          num: "10",
+          imageSrc: "/lumi10.png", 
+          imageAlt: "Atlas reporting and analytics section",
+          title: "Next Steps",
+          text: "These suggestions are tailored to support how they’re feeling right now. They’re free to explore what feels helpful and skip anything that doesn’t."
+        },
+        {
+          num: "11",
+          imageSrc: "/lumi11.png", 
+          imageAlt: "Atlas reporting and analytics section",
+          title: "Stay With It",
+          text: "Users can take a few moments to listen and be present. The sounds here are meant to help them settle, focus, or gently shift their mood at their own pace."
+        },
+        {
+          num: "12",
+          imageSrc: "/lumi12.png", 
+          imageAlt: "Atlas reporting and analytics section",
+          title: "Over Time",
+          text: "This view shows how the users' emotions have changed over time. Looking back can help them notice patterns, growth, or moments that shaped their month."
         },
       ],
     },
