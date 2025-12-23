@@ -53,8 +53,6 @@ const projectData = [
 const ProjectsPage = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
-  const [inProgressClicked, setInProgressClicked] = useState<string | null>(null);
-
   return (
     <div>
       <NavbarSection />
